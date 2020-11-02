@@ -13,7 +13,7 @@ def refresh_temp():
     current_temp = soup.find("span", {"class":classname})
     return current_temp.string
 
-# Refresh the current temperature and write it to a file every 10,000 seconds
+# Refresh the current temperature and write it to a file every 30 minutes 
 while(1):
     temp = refresh_temp()
     with open("temp_file", "w") as f:

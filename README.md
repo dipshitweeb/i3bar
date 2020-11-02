@@ -2,7 +2,7 @@
 My i3 bar configuration with a weather scraper. Move .xinitrc to your home directory. Move the other files to .config/i3/
 
 ## How it works:
-On X server start the commands in .xinitrc are executed. So on X server start we execute the python script cockscraper.py to scrape weather.com for the current temperature. We then output that temperature to a file called temp_file. Afterwards cockbar.sh reads this temperature and appends it to our stdout formatted in JSON. The stdout is then sent to i3bar's protocol via status_command as stated in the file config (Which is i3's config file). Status_command then displays the stdout via our bar.
+On X server start the commands in .xinitrc are executed. So on X server start we execute the python script cockscraper.py in the background to scrape weather.com for the current temperature every 30 minutes. We then output that temperature to a file called temp_file. Afterwards cockbar.sh reads this temperature and appends it to our stdout formatted in JSON. The stdout is then sent to i3bar's protocol via status_command as stated in the file config (Which is i3's config file). Status_command then displays the stdout via our bar.
 ## Dependencies:
 Arch:
 
