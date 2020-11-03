@@ -175,12 +175,12 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-exec nohup python3 ~/.config/i3/cockwock.py
+exec nohup python3 ~/.config/i3/cockscraper.py
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # yuki colors: pink #d38774, darker pink #a56361
 bar {
-	status_command ~/.config/i3/cockwock.sh
+	status_command ~/.config/i3/cockbar.sh
 	workspace_buttons yes	
 	colors {
 		focused_workspace #d38774 #a56361 #ffffff
