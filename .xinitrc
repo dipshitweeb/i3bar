@@ -1,1 +1,1 @@
-nohup python3 ~/path/to/cockwock.py &
+nohup python3 ~/.config/i3/cockscraper.py &
